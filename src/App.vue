@@ -1,36 +1,37 @@
 <template>
   <div id="App">
-  <Header />
-  <Main />
-  <About />
-  <Skill />
-  <Vision />
-  <Footer />
+  <headerSection />
+  <skillSection />
+  <mainSection />
+  <aboutSection />
+  <skillSection />
+  <visionSection />
+  <footerSection />
   </div>
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import Main from './components/Main.vue'
-import About from './components/About.vue'
-import Skill from './components/Skill.vue'
-import Vision from './components/Vision.vue'
-import Footer from './components/Footer.vue'
+import headerSection from './components/Header.vue'
+import mainSection from './components/Main.vue'
+import aboutSection from './components/About.vue'
+import skillSection from './components/Skill.vue'
+import visionSection from './components/Vision.vue'
+import footerSection from './components/Footer.vue'
 export default {
   name: 'App',
   components: {
-    Header,
-    Main,
-    About,
-    Skill,
-    Vision,
-    Footer,
+    headerSection,
+    mainSection,
+    aboutSection,
+    skillSection,
+    visionSection,
+    footerSection,
   }
 }
 </script>
 
 <style>
-#app {
+#App {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
