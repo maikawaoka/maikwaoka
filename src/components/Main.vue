@@ -36,7 +36,7 @@ export default {
 
 #userName {
   color: rgb(0, 0, 0);
-  font-family: 'Impact', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 200;
   font-size: 18pt;
   letter-spacing: 10px;
@@ -45,7 +45,7 @@ export default {
 
 #companyName {
   color: rgb(0, 0, 0);
-  font-family: 'Impact', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-weight: 200;
   font-size: 18pt;
   letter-spacing: 10px;
@@ -56,4 +56,4 @@ export default {
   width: 64px;
   height: 64px;
 }
-</style> 
+</style>
