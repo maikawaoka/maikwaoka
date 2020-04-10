@@ -24,6 +24,7 @@
 <script>
 import Drawer from "vue-simple-drawer";
 
+
 export default {
   name: "HeaderSection",
   components: {
