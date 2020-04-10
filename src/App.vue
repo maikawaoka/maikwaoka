@@ -1,12 +1,12 @@
 <template>
   <div id="App">
-  <headerSection />
-  <skillSection />
-  <mainSection />
-  <aboutSection />
-  <skillSection />
-  <visionSection />
-  <footerSection />
+    <headerSection />
+    <skillSection />
+    <mainSection />
+    <aboutSection />
+    <skillSection />
+    <visionSection />
+    <footerSection />
   </div>
 </template>
 
@@ -31,12 +31,6 @@ export default {
 </script>
 
 <style>
-#App {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 </style>
+
