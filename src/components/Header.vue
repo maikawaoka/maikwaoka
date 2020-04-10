@@ -1,8 +1,22 @@
 <template>
-  <div id="App">
-    <button @click="toggle" class="btn btn-success">toggle</button>
-    <Drawer @close="toggle" align="left" :closeable="true">
-      <div v-if="open">content here</div>
+  <div id="headerSection">
+    <button
+      id="headerButton"
+      @click="toggle"
+    >
+      <img
+        id="bottonimg"
+        src="@/assets/button.png"
+      >
+    </button>
+    <Drawer
+      align="left"
+      :closeable="true"
+      @close="toggle"
+    >
+      <div v-if="open">
+        content here
+      </div>
     </Drawer>
   </div>
 </template>
@@ -11,7 +25,7 @@
 import Drawer from "vue-simple-drawer";
 
 export default {
-  name: "App",
+  name: "HeaderSection",
   components: {
     Drawer
   },
@@ -27,19 +41,27 @@ export default {
   }
 };
 </script>
+
 <style lang="scss">
 @import "~bootstrap/scss/bootstrap-reboot",
-"~bootstrap/scss/buttons";
+  "~bootstrap/scss/buttons";
 </style>
+
 <style>
-#App {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  padding-top: 150px;
-  margin: 0 auto;
-  width: 800px;
+#headerSection {
+  background-color: #fff;
+}
+
+#headerButton {
+  background-color: #fff;
+  border-style: none;
+}
+
+#bottonimg {
+  text-align: left;
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
 }
 </style>
+

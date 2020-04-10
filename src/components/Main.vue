@@ -1,8 +1,17 @@
 <template>
   <div id="mainSection">
-    <div id="userName">MaiKawaoka</div>
-    <div id="companyName">Seattle consulting</div>
-    <img id="profilePicture" src="../assets/img_mai.jpg">
+    <div id="userName">
+      <span style="text-decoration: underline;">Mai Kawaoka</span>
+    </div>
+
+
+    <div id="companyName">
+      Seattle  consulting
+    </div>
+    <img
+      id="profilePicture"
+      src="@/assets/img_mai.jpg"
+    >
   </div>
 </template>
 
@@ -18,28 +27,33 @@ export default {
 
 <style scoped>
 @import url(https://www.google.com/get/noto/);
-  #mainSection {
-    background: linear-gradient(180deg, #06E1C6, #06C1E6);
-    padding-bottom: 30px;
-    text-align: center;
-  }
 
-  #userName {
-    color: #FFFFFF;
-    font-family: 'Noto Suns';
-    font-weight: bold;
-    font-size: 18pt;
-  }
+#mainSection {
+  background: #966;
+  padding-bottom: 30px;
+  text-align: center;
+}
 
-  #companyName {
-    color: #FFFFFF;
-    font-family: Bold;
-    font-size: 18pt;
-  }
+#userName {
+  color: rgb(0, 0, 0);
+  font-family: 'Impact', sans-serif;
+  font-weight: 200;
+  font-size: 18pt;
+  letter-spacing: 10px;
+  text-decoration: underline;
+}
 
-  #profilePicture {
-    border-radius: 10px;
-    width: 370px;
-    height: 500px;
-  }
+#companyName {
+  color: rgb(0, 0, 0);
+  font-family: 'Impact', sans-serif;
+  font-weight: 200;
+  font-size: 18pt;
+  letter-spacing: 10px;
+}
+
+#profilePicture {
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+}
 </style> 
