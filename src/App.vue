@@ -17,6 +17,7 @@ import aboutSection from './components/About.vue'
 import skillSection from './components/Skill.vue'
 import visionSection from './components/Vision.vue'
 import footerSection from './components/Footer.vue'
+
 export default {
   name: 'App',
   components: {
@@ -32,6 +33,6 @@ export default {
 
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap',"https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
 </style>
 

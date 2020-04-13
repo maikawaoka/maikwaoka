@@ -1,11 +1,13 @@
 <template>
   <div id="mainSection">
     <div id="userName">
-      <span style="text-decoration: underline;">
-        Mai Kawaoka
-      </span>
+      Mai Kawaoka
     </div>
-    <p />
+    <hr
+      color="#fff"
+      width="20%"
+      size="3"
+    >
     <div id="companyName">
       Seattle consulting
     </div>
@@ -20,7 +22,7 @@
 export default {
   name: 'Main',
   props: {
-    msg :String
+  msg :String
   }
 }
 </script>
@@ -29,34 +31,37 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
 
 #mainSection {
-  background-color: linear-gradient(to bottom, #80e1f7, #06c1e6);
+  background: #966;
   width: 100%;
   height: auto;
-  padding-bottom: 30px;
+  padding: 30px;
   text-align: center;
 }
 
 #userName {
   color: #fff;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: bolder;
   font-size: 18pt;
   text-shadow: 0 0.5px 2px black;
-  padding: 20px 0;
+  padding: 20px;
   margin: 0 310px;
 }
 
 #companyName {
   color: #fff;
-  padding-top: 20px;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bolder;
   font-size: 18pt;
+  text-shadow: 0 0.5px 2px black;
+  padding: 30px;
+  margin: 0 310px;
 }
 
 #profilePicture {
   background-position: center;
   border-radius: 50%;
-  width: 300px;
+  width: 64px;
   height: auto;
 }
 </style>

@@ -24,19 +24,19 @@
 <script>
 import Drawer from "vue-simple-drawer";
 export default {
-name: "HeaderSection",
-components: {
-Drawer
-},
-data() {
-return {
-open: false
-}
-},
-methods: {
-toggle() {
-this.open = !this.open}
-}
+  name: "HeaderSection",
+  components: {
+  Drawer
+  },
+  data() {
+    return {
+      open: false
+    }
+  },
+  methods: {
+    toggle() {
+    this.open = !this.open}
+  }
 }
 </script>
 
