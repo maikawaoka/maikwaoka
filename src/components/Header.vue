@@ -1,16 +1,30 @@
 <template>
-<div id="headerSection">
-<button @click="toggle" class="headerButton"><img id="imgButton" src= "../assets/headerButton.png"></button>
-<Drawer @close="toggle" align="left" :closeable="true">
-<div v-if="open">content here</div>
-</Drawer>
-</div>
+  <div id="headerSection">
+    <button
+      id="headerButton"
+      @click="toggle"
+    >
+      <img
+        id="bottonimg"
+        src="@/assets/button.png"
+      >
+    </button>
+    <Drawer
+      align="left"
+      :closeable="true"
+      @close="toggle"
+    >
+      <div v-if="open">
+        content here
+      </div>
+    </Drawer>
+  </div>
 </template>
 
 <script>
 import Drawer from "vue-simple-drawer";
 export default {
-name: "headerSection",
+name: "HeaderSection",
 components: {
 Drawer
 },
@@ -21,29 +35,39 @@ open: false
 },
 methods: {
 toggle() {
-this.open = !this.open
+this.open = !this.open}
 }
 }
-};
 </script>
 
 <style lang="scss">
 @import "~bootstrap/scss/bootstrap-reboot",
-"~bootstrap/scss/buttons";
+  "~bootstrap/scss/buttons";
 </style>
 
 <style>
 #headerSection {
-text-align: left;
-width: 100%;
-height: auto;
+  text-align: left;
+  width: 100%;
+  height: auto;
 }
 
+#headerButton {
+  background-color: #fff;
+  border-style: none;
+}
+
+#bottonimg {
+  text-align: left;
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+}
 
 #imgButton {
-background-color: #FFFFFF;
-width : 30px;
-height: auto;
+  background-color: #fff;
+  width: 30px;
+  height: auto;
 }
-
 </style>
+
