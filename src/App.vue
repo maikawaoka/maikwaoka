@@ -1,5 +1,5 @@
 <template>
-  <Drawer>
+  <div>
     <div id="headerSection">
       <headerSection />
     </div>
@@ -18,7 +18,7 @@
     <div id="footerSection">
       <footerSection />
     </div>
-  </Drawer>
+  </div>
 </template>
 
 <script>

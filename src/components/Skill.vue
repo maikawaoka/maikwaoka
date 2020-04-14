@@ -73,6 +73,10 @@
     text-align: center;
   }
 
+  #GitHub {
+    text-align: center;
+  }
+
   #gitHubLabel {
     background: #cfc;
     color: #707070;
