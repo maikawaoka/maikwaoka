@@ -14,28 +14,30 @@
 
 <style>
 #aboutSection {
-  background-color: #f5f5f5;
-  padding: 20px;
-  text-align: center;
+  background-color: #a08181;
   width: 100%;
   height: auto;
+  padding: 30px;
 }
 
 #aboutTitle {
   color: #000;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: bold;
   font-size: 18pt;
   text-align: center;
 }
 
 #aboutExplain {
+  background: #cfc;
   color: #707070;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: bold;
   font-size: 12pt;
   word-break: break-all;
-  width: 50%;
+  width: 40%;
   margin: 0 auto;
+  padding: 10px;
+  text-align: center;
 }
 </style>

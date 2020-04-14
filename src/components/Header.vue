@@ -15,7 +15,45 @@
       @close="toggle"
     >
       <div v-if="open">
-        content here
+        <ul>
+          <li>
+            <a
+              v-smooth-scroll
+              href="#headerSection"
+            >Home</a>
+          </li>
+          <li>
+            <a
+              v-smooth-scroll
+              href="#AboutSection"
+            >
+              About Me</a>
+          </li>
+          <li>
+            <a
+              v-smooth-scroll
+              href="#skillSection"
+            >Skill Sets</a>
+          </li>
+          <li>
+            <a
+              v-smooth-scroll
+              href="#visionSection"
+            >Vision</a>
+          </li>
+          <li>
+            <a
+              v-smooth-scroll
+              href="#visionSection"
+            >Customize Item1</a>
+          </li>
+          <li>
+            <a
+              v-smooth-scroll
+              href="#visionSection"
+            >Customize Item2</a>
+          </li>
+        </ul>
       </div>
     </Drawer>
   </div>
@@ -47,8 +85,8 @@ export default {
 
 <style>
 #headerSection {
-  text-align: left;
-  width: 100%;
+  overflow-x: auto;
+  width: 40px;
   height: auto;
 }
 
@@ -60,8 +98,8 @@ export default {
 #bottonimg {
   text-align: left;
   background-color: #fff;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: auto;
 }
 
 #imgButton {

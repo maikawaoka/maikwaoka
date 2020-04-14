@@ -11,10 +11,12 @@
     <div id="companyName">
       Seattle consulting
     </div>
-    <img
-      id="profilePicture"
-      src="../assets/img_mai.png"
-    >
+    <p>
+      <img
+        id="profilePicture"
+        src="../assets/img_mai.png"
+      >
+    </p>
   </div>
 </template>
 
@@ -22,7 +24,10 @@
 export default {
   name: 'Main',
   props: {
-  msg :String
+    msg: {
+      type: String,
+      default: ''
+    }
   }
 }
 </script>
@@ -34,8 +39,7 @@ export default {
   background: #966;
   width: 100%;
   height: auto;
-  padding: 30px;
-  text-align: center;
+  padding: 40px;
 }
 
 #userName {
@@ -44,8 +48,7 @@ export default {
   font-weight: bolder;
   font-size: 18pt;
   text-shadow: 0 0.5px 2px black;
-  padding: 20px;
-  margin: 0 310px;
+  text-align: center;
 }
 
 #companyName {
@@ -54,14 +57,15 @@ export default {
   font-weight: bolder;
   font-size: 18pt;
   text-shadow: 0 0.5px 2px black;
-  padding: 30px;
-  margin: 0 310px;
+  text-align: center;
 }
 
 #profilePicture {
-  background-position: center;
   border-radius: 50%;
   width: 64px;
   height: auto;
+  margin: 50px auto;
+  display: block;
+  text-align: center;
 }
 </style>
