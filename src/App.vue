@@ -1,12 +1,23 @@
 <template>
-  <div id="App">
-    <headerSection />
-    <skillSection />
-    <mainSection />
-    <aboutSection />
-    <skillSection />
-    <visionSection />
-    <footerSection />
+  <div>
+    <div id="headerSection">
+      <headerSection />
+    </div>
+    <div id="mainSection">
+      <mainSection />
+    </div>
+    <div id="aboutSection">
+      <aboutSection />
+    </div>
+    <div id="skillSection">
+      <skillSection />
+    </div>
+    <div id="visionSection">
+      <visionSection />
+    </div>
+    <div id="footerSection">
+      <footerSection />
+    </div>
   </div>
 </template>
 

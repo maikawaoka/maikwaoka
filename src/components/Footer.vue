@@ -40,13 +40,13 @@ export default {
     background: #fff;
     width: 100%;
     height: auto;
-    text-align: center;
   }
 
   #footerScroll {
-    margin: 0 auto;
     width: 30px;
     height: 30px;
+    margin: 0 auto;
+    display: block;
     text-align: center;
   }
 
