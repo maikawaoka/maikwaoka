@@ -1,7 +1,6 @@
 <template>
   <div id="App">
     <headerSection />
-    <skillSection />
     <mainSection />
     <aboutSection />
     <skillSection />
