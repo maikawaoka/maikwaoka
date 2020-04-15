@@ -39,7 +39,7 @@ export default {
   background: #966;
   width: 100%;
   height: auto;
-  padding: 40px;
+  padding: 30px;
 }
 
 #userName {

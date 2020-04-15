@@ -4,7 +4,7 @@
       Skill Set
     </div>
     <div id="skillExplain">
-      skillskillskillskillsksklskillskillskillskillskillskillskillskillskillskskillskillskillsk
+      skillskillskillskillsksklskilllskillskillskillskskillskillskillsk
     </div>
     <div id="GitHub">
       <span id="gitHubLabel">
@@ -20,29 +20,10 @@
 </template>
 
 <script>
-// var ctx = document.getElementById("Front-end.chart");
-// var myRadarChart = new Chart(ctx, {
-//     type: 'radar',
-//     data: {
-//       labels: ["HTML", "css", "Javascript", "SCSS", "Vue"],
-//       datasets: [{
-//         label: 'Front-end',
-//         data: [1, 3, 5, 2, 4],
-//         backgroundColor: 'RGBA(,0.25)',
-//         borderColor: 'RGBA(#fff)',
-//         borderWidth: 1,
-//         pointBackgroundColor: 'RGB()'
-//       },
-//       scale: {
-//         ticks:{
-//           suggestedMin: 1,
-//           suggestedMax: 5,
-//           stepSize: 5,
-//           }
-//         }
-//       }
-//     }
-//   });
+// import Frontendchart from 'Frontendchart.vue'
+// import Backendchart from 'Backendchart.vue'
+// import DevOpschart from 'DevOpschart.vue'
+
 </script>
 
 <style>
