@@ -33,7 +33,7 @@ export default {
     }
   },
   mounted () {
-    this.renderChart(this.date, this.options)
+    this.renderChart(this.dat, this.options)
   }
 }
 </script>
