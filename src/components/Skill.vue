@@ -4,45 +4,129 @@
       Skill Set
     </div>
     <div id="skillExplain">
-      skillskillskillskillsksklskillskillskillskillskillskillskillskillskillskskillskillskillsk
+      skillskillskillskillsksklskilllskillskillskillskskillskillskillsk
     </div>
-    <div id="GitHub">
-      <span id="gitHubLabel">
-        GitHub:
-      </span>
-      <span id="gitHubLink">
-        <a href="https://github.com/maikawaoka/portfolio">https://github.com/maikawaoka/portfolio
-        </a>
-      </span>
+    <label id="gitHubLabel">
+      GitHub:
+      <a
+        id="gitHubLink"
+        href="https://github.com/maikawaoka/portfolio"
+      >
+        https://github.com/maikawaoka/portfolio</a>
+    </label>
+    <div id="skillCategories">
+      <ul>
+        <li>
+          <span
+            id="front"
+            @click="setCurrentChart('front')"
+          >
+            Front-end
+          </span>
+        </li>
+        <li>
+          <span
+            id="back"
+            @click="setCurrentChart('back')"
+          >
+            Back-end
+          </span>
+        </li>
+        <li>
+          <span
+            id="DevOps"
+            @click="setCurrentChart('devOps')"
+          >
+            DevOps
+          </span>
+        </li>
+      </ul>
     </div>
-    <canvas id="Front-end.chart" />
+    <div id="skillList">
+      <ul
+        id="front-end"
+        :class="{'front-change': isFrontActive}"
+      >
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li>jQuery</li>
+        <li>SCSS</li>
+        <li>Vue</li>
+      </ul>
+      <ul
+        id="back-end"
+        :class="{'back-change': isBackActive}"
+      >
+        <li>Java</li>
+        <li>Ruby</li>
+        <li>RubyOnRails</li>
+        <li>MySQL</li>
+        <li>Python</li>
+      </ul>
+      <ul
+        id="devops"
+        :class="{'dev-change': isDevOpsActive}"
+      >
+        <li>Linux</li>
+        <li>Git</li>
+        <li>GitHub</li>
+        <li>Firebase</li>
+        <li>AWS</li>
+      </ul>
+    </div>
+    <div
+      v-if="isFrontActive"
+    >
+      <Frontendchart />
+    </div>
+    <div
+      v-if="isBackActive"
+    >
+      <Backendchart />
+    </div>
+    <div
+      v-if="isDevOpsActive"
+    >
+      <DevOpschart />
+    </div>
   </div>
 </template>
 
 <script>
-// var ctx = document.getElementById("Front-end.chart");
-// var myRadarChart = new Chart(ctx, {
-//     type: 'radar',
-//     data: {
-//       labels: ["HTML", "css", "Javascript", "SCSS", "Vue"],
-//       datasets: [{
-//         label: 'Front-end',
-//         data: [1, 3, 5, 2, 4],
-//         backgroundColor: 'RGBA(,0.25)',
-//         borderColor: 'RGBA(#fff)',
-//         borderWidth: 1,
-//         pointBackgroundColor: 'RGB()'
-//       },
-//       scale: {
-//         ticks:{
-//           suggestedMin: 1,
-//           suggestedMax: 5,
-//           stepSize: 5,
-//           }
-//         }
-//       }
-//     }
-//   });
+import Frontendchart from '../components/Frontendchart.vue';
+import Backendchart from '../components/Backendchart.vue';
+import DevOpschart from '../components/DevOpschart.vue';
+
+export default {
+  components: {
+    Frontendchart,
+    Backendchart,
+    DevOpschart
+  },
+  data(){
+    return {
+      currentChart: 'front'
+    }
+  },
+  computed: {
+    isFrontActive() {
+      return this.currentChart=='front';
+    },
+    isBackActive() {
+      return this.currentChart=='back';
+    },
+    isDevOpsActive() {
+      return this.currentChart=='devOps';
+    },
+  },
+  methods: {
+    setCurrentChart(chart) {
+      this.currentChart = chart;
+    }
+  }
+}
+
 </script>
 
 <style>
