@@ -10,7 +10,7 @@ export default {
         datasets: [
           {
             label: 'Bar Dateset',
-            data: [3, 4, 2, 1, ],
+            data: [3, 4, 2, 1, 5],
             backgroundColor: [
               'rgba(102,51,51,0.6)',
             ],

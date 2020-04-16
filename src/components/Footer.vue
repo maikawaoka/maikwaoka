@@ -56,7 +56,7 @@ export default {
     font-weight: bold;
     font-size: 12pt;
     text-shadow: 0 0.5px 2px black;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
   }
 </style>

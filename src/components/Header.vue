@@ -12,7 +12,6 @@
     <Drawer
       align="left"
       :closeable="true"
-      @close="toggle"
     >
       <div v-if="open">
         <ul>
@@ -21,6 +20,7 @@
               v-smooth-scroll
               href="#headerSection"
               class="Menubar"
+              @click="toggle"
             >Home</a>
           </li><br>
           <li>
@@ -28,6 +28,7 @@
               v-smooth-scroll
               href="#AboutSection"
               class="Menubar"
+              @click="toggle"
             >
               About Me</a>
           </li><br>
@@ -36,6 +37,7 @@
               v-smooth-scroll
               href="#skillSection"
               class="Menubar"
+              @click="toggle"
             >Skill Set</a>
           </li><br>
           <li>
@@ -43,6 +45,7 @@
               v-smooth-scroll
               href="#visionSection"
               class="Menubar"
+              @click="toggle"
             >Vision</a>
           </li><br>
           <li>
@@ -50,6 +53,7 @@
               v-smooth-scroll
               href="#visionSection"
               class="Menubar"
+              @click="toggle"
             >Customize Item1</a>
           </li><br>
           <li>
@@ -57,6 +61,7 @@
               v-smooth-scroll
               href="#visionSection"
               class="Menubar"
+              @click="toggle"
             >Customize Item2</a>
           </li><br>
         </ul>
@@ -119,5 +124,6 @@ $--simple-drawer-bg-color:white;
 
 .Menubar {
   color: black;
+  font-size: 20px;
 }
 </style>

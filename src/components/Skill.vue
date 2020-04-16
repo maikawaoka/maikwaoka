@@ -4,9 +4,7 @@
       Skill Set
     </div>
     <div id="skillskill">
-      <div id="skillExplain">
-        skillskillskillskillsksklskilllskillskillskillskskillskillskillsk
-      </div>
+      <div id="skillExplain" />
       <label id="gitHubLabel">
         GitHub:
         <a
@@ -43,7 +41,7 @@
           </span>
         </li>
       </ul>
-    </div><br>
+    </div>
     <div id="skillList">
       <ul
         id="front-end"
@@ -108,7 +106,7 @@
           AWS
         </li>
       </ul>
-    </div>
+    </div><br>
     <div
       v-if="isFrontActive"
       class="graph"
@@ -173,51 +171,48 @@ export default {
   height: auto;
   margin: 0 auto;
   text-align: center;
+  padding: 30px;
 }
 
 #skillskill {
   background: #fff;
-  border-radius: 20px 20px 20px 20px;
-}
-
-#skillTitle {
-  color: #fff;
-  text-shadow: 2px 2px #000;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 18pt;
-  text-align: center;
-}
-
-#skillExplain {
+  border-radius: 10px 10px 10px 10px;
   color: #000;
   font-family: 'Montserrat', sans-serif;
   font-size: 12pt;
   word-break: break-all;
-  width: 40%;
+  width: 50%;
   margin: 0 auto;
   padding: 20px;
   text-align: center;
 }
 
-#gitHubLabel {
-  color: #000;
+#skillTitle {
+  color: #fafad2;
+  text-shadow: 2px 2px #000;
   font-family: 'Montserrat', sans-serif;
-  font-size: 12pt;
-  width: 40%;
-  margin: 0 auto;
-  padding: 10px;
+  font-weight: bold;
+  font-size: 24pt;
+}
+
+#skillExplain {
+  width: 50%;
   text-align: center;
+}
+
+#gitHubLabel {
+  font-size: 16px;
 }
 
 #front {
   background: brown;
+  border-radius: 10px 10px 10px 10px;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
   font-size: 12pt;
   word-break: break-all;
   width: 40%;
-  margin: 0 auto;
+  margin: 10px;
   padding: 10px;
   text-align: center;
   display: inlien-block;
@@ -229,20 +224,15 @@ export default {
   font-weight: bold;
 }
 
-.front-change {
-  background: brown;
-  color: #fff;
-  font-family: 'Montserrat', sans-serif;
-}
-
 #back {
   background: navy;
+  border-radius: 10px 10px 10px 10px;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
   font-size: 12pt;
   word-break: break-all;
   width: 40%;
-  margin: 0 auto;
+  margin: 10px;
   padding: 10px;
   text-align: center;
   display: inlien-block;
@@ -253,20 +243,15 @@ export default {
   font-family: 'Montserrat', sans-serif;
 }
 
-.back-change {
-  background: navy;
-  color: #fff;
-  font-family: 'Montserrat', sans-serif;
-}
-
 #DevOps {
   background: purple;
+  border-radius: 10px 10px 10px 10px;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
   font-size: 12pt;
   word-break: break-all;
   width: 40%;
-  margin: 0 auto;
+  margin: 10px;
   padding: 10px;
   text-align: center;
   display: inlien-block;
@@ -274,12 +259,6 @@ export default {
 
 .devops {
   display: inlien-block;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.dev-change {
-  background: purple;
-  color: #fff;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -294,14 +273,16 @@ li {
 }
 
 .graph {
-  background: #bbb;
-  width: 30%;
+  background: #fff;
+  width: 40%;
+  height: auto;
   margin: 0 auto;
   font-family: 'Montserrat', sans-serif;
 }
 
 #HTML {
-  background: rgba(102, 51, 51, 0.6);
+  background: rgba(102, 51, 51, 0.8);
+  border-radius: 10px 10px 10px 10px;
   color: #fff;
   padding: 5px;
   margin: 5px;
@@ -309,6 +290,7 @@ li {
 
 #css {
   background: rgba(102, 51, 51, 0.6);
+  border-radius: 10px 10px 10px 10px;
   color: #fff;
   padding: 5px;
   margin: 5px;
@@ -316,6 +298,7 @@ li {
 
 #Javascript {
   background: rgba(102, 51, 51, 0.6);
+  border-radius: 10px 10px 10px 10px;
   color: #fff;
   padding: 5px;
   margin: 5px;
@@ -323,6 +306,7 @@ li {
 
 #jQuery {
   background: rgba(102, 51, 51, 0.6);
+  border-radius: 10px 10px 10px 10px;
   color: #fff;
   padding: 5px;
   margin: 5px;
@@ -330,6 +314,7 @@ li {
 
 #SCSS {
   background: rgba(102, 51, 51, 0.6);
+  border-radius: 40px 40px 40px 40px;
   color: #fff;
   padding: 5px;
   margin: 5px;
@@ -337,6 +322,7 @@ li {
 
 #Vue {
   background: rgba(102, 51, 51, 0.6);
+  border-radius: 40px 40px 40px 40px;
   color: #fff;
   padding: 5px;
   margin: 5px;
@@ -344,6 +330,7 @@ li {
 
 #Java {
   background: rgba(0, 51, 151, 0.6);
+  border-radius: 10px 10px 10px 10px;
   color: #fff;
   padding: 5px;
   margin: 5px;
@@ -351,6 +338,7 @@ li {
 
 #Ruby {
   background: rgba(0, 51, 151, 0.6);
+  border-radius: 10px 10px 10px 10px;
   color: #fff;
   padding: 5px;
   margin: 5px;
@@ -358,6 +346,7 @@ li {
 
 #RubyOnRails {
   background: rgba(0, 51, 151, 0.6);
+  border-radius: 10px 10px 10px 10px;
   color: #fff;
   padding: 5px;
   margin: 5px;
@@ -365,6 +354,7 @@ li {
 
 #MySQL {
   background: rgba(0, 51, 151, 0.6);
+  border-radius: 10px 10px 10px 10px;
   color: #fff;
   padding: 5px;
   margin: 5px;
@@ -372,12 +362,14 @@ li {
 
 #Python {
   background: rgba(0, 51, 151, 0.6);
+  border-radius: 10px 10px 10px 10px;
   color: #fff;
   padding: 5px;
 }
 
 #Linux {
   background: rgba(102, 51, 102, 0.6);
+  border-radius: 10px 10px 10px 10px;
   color: #fff;
   padding: 5px;
   margin: 5px;
@@ -385,6 +377,7 @@ li {
 
 #Git {
   background: rgba(102, 51, 102, 0.6);
+  border-radius: 10px 10px 10px 10px;
   color: #fff;
   padding: 5px;
   margin: 5px;
@@ -392,6 +385,7 @@ li {
 
 #GitHub {
   background: rgba(102, 51, 102, 0.6);
+  border-radius: 10px 10px 10px 10px;
   color: #fff;
   padding: 5px;
   margin: 5px;
@@ -399,6 +393,7 @@ li {
 
 #Firebase {
   background: rgba(102, 51, 102, 0.6);
+  border-radius: 10px 10px 10px 10px;
   color: #fff;
   padding: 5px;
   margin: 5px;
@@ -406,6 +401,7 @@ li {
 
 #AWS {
   background: rgba(102, 51, 102, 0.6);
+  border-radius: 10px 10px 10px 10px;
   color: #fff;
   padding: 5px;
   margin: 5px;
