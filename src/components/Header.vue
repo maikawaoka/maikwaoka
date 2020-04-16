@@ -20,39 +20,45 @@
             <a
               v-smooth-scroll
               href="#headerSection"
+              class="Menubar"
             >Home</a>
-          </li>
+          </li><br>
           <li>
             <a
               v-smooth-scroll
               href="#AboutSection"
+              class="Menubar"
             >
               About Me</a>
-          </li>
+          </li><br>
           <li>
             <a
               v-smooth-scroll
               href="#skillSection"
-            >Skill Sets</a>
-          </li>
+              class="Menubar"
+            >Skill Set</a>
+          </li><br>
           <li>
             <a
               v-smooth-scroll
               href="#visionSection"
+              class="Menubar"
             >Vision</a>
-          </li>
+          </li><br>
           <li>
             <a
               v-smooth-scroll
               href="#visionSection"
+              class="Menubar"
             >Customize Item1</a>
-          </li>
+          </li><br>
           <li>
             <a
               v-smooth-scroll
               href="#visionSection"
+              class="Menubar"
             >Customize Item2</a>
-          </li>
+          </li><br>
         </ul>
       </div>
     </Drawer>
@@ -81,6 +87,9 @@ export default {
 <style lang="scss">
 @import "~bootstrap/scss/bootstrap-reboot",
   "~bootstrap/scss/buttons";
+$--simple-drawer-bg-color:white;
+
+@import "~vue-simple-drawer/src/index"
 </style>
 
 <style>
@@ -107,5 +116,8 @@ export default {
   width: 30px;
   height: auto;
 }
-</style>
 
+.Menubar {
+  color: black;
+}
+</style>

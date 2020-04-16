@@ -15,30 +15,32 @@
 
 <style>
 #visionSection {
-  background: #a08181;
+  background: #333;
   width: 100%;
   height: auto;
   padding: 30px;
-}
-
-#visionTitle {
-  color: #000;
-  font-family: 'Oswald', sans-serif;
-  font-size: 18pt;
-  font-weight: bold;
   text-align: center;
 }
 
+#visionTitle {
+  color: #fff;
+  text-shadow: 2px 2px #000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18pt;
+  font-weight: bold;
+}
+
 #visionExplain {
-  background: #cfc;
-  color: #707070;
-  font-family: 'Oswald', sans-serif;
+  background: #fff;
+  border-radius: 20px 20px 20px 20px;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 12pt;
   word-break: break-all;
   width: 40%;
   margin: 0 auto;
-  padding: 10px;
+  padding: 20px;
   text-align: center;
 }
 </style>

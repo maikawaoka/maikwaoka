@@ -1,22 +1,21 @@
 <script>
 import { Radar } from 'vue-chartjs';
-
 export default {
-  name: 'Backendchart',
+  name: 'Frontendchart',
   extends: Radar,
   data (){
     return {
       data: {
-        labels: ["Java", "Ruby", "RubyOnRails"],
+        labels: ["Java","Ruby","RubyOnRails","MySQL","Python"],
         datasets: [
           {
             label: 'Bar Dateset',
-            data: [1, 3, 5, 2, 4],
+            data: [3, 4, 2, 1, ],
             backgroundColor: [
-              'rgba(225,99,132,0.2)',
+              'rgba(0,51,151,0.6)',
             ],
             borderColor: [
-              'rgba(225,99,132,1)',
+              'rgba(0,51,151,1)',
             ],
             borderWidth: 1
           },
@@ -34,7 +33,7 @@ export default {
     }
   },
   mounted () {
-    this.renderChart(this.date, this.options)
+    this.renderChart(this.data, this.options)
   }
 }
 </script>

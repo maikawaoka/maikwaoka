@@ -14,30 +14,31 @@
 
 <style>
 #aboutSection {
-  background-color: #a08181;
+  background-color: #333;
   width: 100%;
   height: auto;
   padding: 30px;
 }
 
 #aboutTitle {
-  color: #000;
-  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 18pt;
   text-align: center;
 }
 
 #aboutExplain {
-  background: #cfc;
-  color: #707070;
-  font-family: 'Oswald', sans-serif;
-  font-weight: bold;
+  background: #fff;
+  border-radius: 20px 20px 20px 20px;
+  text-shadow: 2px 2px #000;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
   font-size: 12pt;
   word-break: break-all;
   width: 40%;
   margin: 0 auto;
-  padding: 10px;
+  padding: 20px;
   text-align: center;
 }
 </style>

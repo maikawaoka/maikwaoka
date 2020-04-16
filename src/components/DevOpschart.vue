@@ -1,22 +1,21 @@
 <script>
 import { Radar } from 'vue-chartjs';
-
 export default {
-  name: 'DevOpschart',
+  name: 'Frontendchart',
   extends: Radar,
   data (){
     return {
       data: {
-        labels: ["Linux", "Node", "Git", "Github", "Firebase"],
+        labels: ["Linux","Git","GitHub","Firebase","AWS"],
         datasets: [
           {
             label: 'Bar Dateset',
-            data: [1, 3, 5, 2, 4],
+            data: [3, 4, 2, 1, ],
             backgroundColor: [
-              'rgba(225,99,132,0.2)',
+              'rgba(102,51,102,0.6)',
             ],
             borderColor: [
-              'rgba(225,99,132,1)',
+              'rgba(102,51,102,1)',
             ],
             borderWidth: 1
           },
@@ -34,7 +33,7 @@ export default {
     }
   },
   mounted () {
-    this.renderChart(this.date, this.options)
+    this.renderChart(this.data, this.options)
   }
 }
 </script>
