@@ -6,3 +6,6 @@ Vue.config.productionTip = false
 new Vue({
   render: h => h(App),
 }).$mount('#app')
+
+var vueSmoothScroll = require('vue-smoothscroll');
+Vue.use(vueSmoothScroll);

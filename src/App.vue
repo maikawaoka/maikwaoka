@@ -1,22 +1,34 @@
 <template>
-  <div id="App">
-    <headerSection />
-    <skillSection />
-    <mainSection />
-    <aboutSection />
-    <skillSection />
-    <visionSection />
-    <footerSection />
+  <div>
+    <div id="headerSection">
+      <headerSection />
+    </div>
+    <div id="mainSection">
+      <mainSection />
+    </div>
+    <div id="aboutSection">
+      <aboutSection />
+    </div>
+    <div id="skillSection">
+      <skillSection />
+    </div>
+    <div id="visionSection">
+      <visionSection />
+    </div>
+    <div id="footerSection">
+      <footerSection />
+    </div>
   </div>
 </template>
 
 <script>
-import headerSection from './components/Header.vue'
-import mainSection from './components/Main.vue'
-import aboutSection from './components/About.vue'
-import skillSection from './components/Skill.vue'
-import visionSection from './components/Vision.vue'
-import footerSection from './components/Footer.vue'
+import headerSection from './components/Header.vue';
+import mainSection from './components/Main.vue';
+import aboutSection from './components/About.vue';
+import skillSection from './components/Skill.vue';
+import visionSection from './components/Vision.vue';
+import footerSection from './components/Footer.vue';
+
 export default {
   name: 'App',
   components: {
@@ -32,6 +44,10 @@ export default {
 
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 </style>
+
 

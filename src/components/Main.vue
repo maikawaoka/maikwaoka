@@ -1,18 +1,22 @@
 <template>
   <div id="mainSection">
     <div id="userName">
-      <span style="text-decoration: underline;">
-        Mai Kawaoka
-      </span>
+      Mai Kawaoka
     </div>
-    <p />
+    <hr
+      color="#5F9EA0"
+      width="20%"
+      size="3"
+    >
     <div id="companyName">
       Seattle consulting
     </div>
-    <img
-      id="profilePicture"
-      src="../assets/img_mai.png"
-    >
+    <p>
+      <img
+        id="profilePicture"
+        src="../assets/img_mai.png"
+      >
+    </p>
   </div>
 </template>
 
@@ -20,7 +24,10 @@
 export default {
   name: 'Main',
   props: {
-    msg :String
+    msg: {
+      type: String,
+      default: ''
+    }
   }
 }
 </script>
@@ -29,34 +36,36 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
 
 #mainSection {
-  background-color: linear-gradient(to bottom, #80e1f7, #06c1e6);
+  background: #333;
   width: 100%;
   height: auto;
-  padding-bottom: 30px;
-  text-align: center;
+  padding: 30px;
 }
 
 #userName {
-  color: #fff;
-  font-family: 'Noto Sans', sans-serif;
+  color: #fafad2;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bolder;
   font-size: 18pt;
-  text-shadow: 0 0.5px 2px black;
-  padding: 20px 0;
-  margin: 0 310px;
+  text-shadow: 2px 2px black;
+  text-align: center;
 }
 
 #companyName {
-  color: #fff;
-  padding-top: 20px;
-  font-family: 'Noto Sans', sans-serif;
-  font-size: 18pt;
+  color: #fafad2;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
+  font-size: 24pt;
+  text-shadow: 2px 2px black;
+  text-align: center;
 }
 
 #profilePicture {
-  background-position: center;
   border-radius: 50%;
   width: 300px;
   height: auto;
+  margin: 50px auto;
+  display: block;
+  text-align: center;
 }
 </style>
