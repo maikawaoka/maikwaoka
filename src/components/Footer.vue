@@ -43,8 +43,8 @@ export default {
   }
 
   #footerScroll {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     margin: 0 auto;
     display: block;
     text-align: center;
@@ -52,10 +52,11 @@ export default {
 
   #footerCopyright {
     color: #fff;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 12pt;
     text-shadow: 0 0.5px 2px black;
+    padding: 10px;
     text-align: center;
   }
 </style>

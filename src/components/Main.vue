@@ -4,7 +4,7 @@
       Mai Kawaoka
     </div>
     <hr
-      color="#fff"
+      color="#5F9EA0"
       width="20%"
       size="3"
     >
@@ -36,33 +36,33 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
 
 #mainSection {
-  background: #966;
+  background: #333;
   width: 100%;
   height: auto;
   padding: 30px;
 }
 
 #userName {
-  color: #fff;
-  font-family: 'Oswald', sans-serif;
+  color: #fafad2;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bolder;
   font-size: 18pt;
-  text-shadow: 0 0.5px 2px black;
+  text-shadow: 2px 2px black;
   text-align: center;
 }
 
 #companyName {
-  color: #fff;
-  font-family: 'Oswald', sans-serif;
+  color: #fafad2;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bolder;
-  font-size: 18pt;
-  text-shadow: 0 0.5px 2px black;
+  font-size: 24pt;
+  text-shadow: 2px 2px black;
   text-align: center;
 }
 
 #profilePicture {
   border-radius: 50%;
-  width: 64px;
+  width: 300px;
   height: auto;
   margin: 50px auto;
   display: block;
