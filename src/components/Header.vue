@@ -12,7 +12,6 @@
     <Drawer
       align="left"
       :closeable="true"
-      @close="toggle"
     >
       <div v-if="open">
         <ul>
@@ -20,39 +19,51 @@
             <a
               v-smooth-scroll
               href="#headerSection"
+              class="Menubar"
+              @click="toggle"
             >Home</a>
-          </li>
+          </li><br>
           <li>
             <a
               v-smooth-scroll
               href="#AboutSection"
+              class="Menubar"
+              @click="toggle"
             >
               About Me</a>
-          </li>
+          </li><br>
           <li>
             <a
               v-smooth-scroll
               href="#skillSection"
-            >Skill Sets</a>
-          </li>
+              class="Menubar"
+              @click="toggle"
+            >Skill Set</a>
+          </li><br>
           <li>
             <a
               v-smooth-scroll
               href="#visionSection"
+              class="Menubar"
+              @click="toggle"
             >Vision</a>
-          </li>
+          </li><br>
           <li>
             <a
               v-smooth-scroll
               href="#visionSection"
+              class="Menubar"
+              @click="toggle"
             >Customize Item1</a>
-          </li>
+          </li><br>
           <li>
             <a
               v-smooth-scroll
               href="#visionSection"
+              class="Menubar"
+              @click="toggle"
             >Customize Item2</a>
-          </li>
+          </li><br>
         </ul>
       </div>
     </Drawer>
@@ -81,6 +92,9 @@ export default {
 <style lang="scss">
 @import "~bootstrap/scss/bootstrap-reboot",
   "~bootstrap/scss/buttons";
+$--simple-drawer-bg-color:white;
+
+@import "~vue-simple-drawer/src/index"
 </style>
 
 <style>
@@ -107,5 +121,9 @@ export default {
   width: 30px;
   height: auto;
 }
-</style>
 
+.Menubar {
+  color: black;
+  font-size: 20px;
+}
+</style>

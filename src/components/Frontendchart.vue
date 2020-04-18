@@ -6,16 +6,16 @@ export default {
   data (){
     return {
       data: {
-        labels: ["HTML", "css", "Javascript", "SCSS", "Vue","June"],
+        labels: ["HTML", "css", "Javascript", "SCSS", "Vue"],
         datasets: [
           {
             label: 'Bar Dateset',
-            data: [1, 3, 5, 2, 4],
+            data: [3, 4, 2, 1, 5],
             backgroundColor: [
-              'rgba(225,99,132,0.2)',
+              'rgba(102,51,51,0.6)',
             ],
             borderColor: [
-              'rgba(225,99,132,1)',
+              'rgba(102,51,51,1)',
             ],
             borderWidth: 1
           },

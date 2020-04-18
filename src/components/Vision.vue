@@ -4,7 +4,7 @@
       Vision
     </div>
     <div id="visionExplain">
-      あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
+      実際に開発するのは今回のポートフォリオの実装が初めてでした。まだ基礎的なこともままならない状態ですが、目に見えて変化がわかるフロントエンドの分野を非常に楽しく感じました。これから高度な技術を身につけられるよう挑戦していきます。
     </div>
   </div>
 </template>
@@ -15,30 +15,31 @@
 
 <style>
 #visionSection {
-  background: #a08181;
+  background: #333;
   width: 100%;
   height: auto;
   padding: 30px;
-}
-
-#visionTitle {
-  color: #000;
-  font-family: 'Oswald', sans-serif;
-  font-size: 18pt;
-  font-weight: bold;
   text-align: center;
 }
 
-#visionExplain {
-  background: #cfc;
-  color: #707070;
-  font-family: 'Oswald', sans-serif;
+#visionTitle {
+  color: #fafad2;
+  text-shadow: 2px 2px #000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24pt;
   font-weight: bold;
+}
+
+#visionExplain {
+  background: #fff;
+  border-radius: 10px 10px 10px 10px;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
   font-size: 12pt;
   word-break: break-all;
-  width: 40%;
+  width: 50%;
   margin: 0 auto;
-  padding: 10px;
+  padding: 20px;
   text-align: center;
 }
 </style>
