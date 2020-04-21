@@ -1,0 +1,19 @@
+{
+  "skills": [
+    {
+      "category": "front-end",
+      "name": ["HTML","css","Javascript","JQuery","SCSS","Vue"],
+      "score":[3,3,3,3,3,3]
+    },
+    {
+      "category": "back-end",
+      "name": ["Java","Ruby","RubyOnRails","MYSQL","Python"],
+      "score":[3,1,1,1,1]
+    },
+    {
+      "category": "devops",
+      "name": ["Linux","Git","GitHub","Firebase","AWS"],
+      "score":[3,3,3,3,1]
+    }
+  ]
+}

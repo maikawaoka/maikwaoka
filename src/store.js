@@ -1,26 +1,39 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import Axios from 'axios'
+Vue.use(Vuex)//vueが読み込まれている
 
-Vue.use(Vuex)
-
-const store = new Vuex.Store({//説明の為、代入しました
-  //ここに実装を書きます
-  //stateオプションで初期値を設定
+const store = new Vuex.Store({
   state: {
-    count: 10
+    skillCategories: [],
   },
-  //gettersオプションで定義
   getters: {
-    //stateから別の値を計算
-    squared: function(state) {
-      return state.count * state.count
+    getSkill: (state) => (category) =>{
+      if (state.skillCategories.length > 0) {
+        return state.skillCategories.find((skill) =>skill.category===category);
+      }
+      return [];
     },
-    cubed: (state, getters) => state.count * getters.squared
-  }
-})
-
-console.log(store.state.count) //10
-//store.gettersで参照
-console.log(store.getters.cubed) //1000
+  },
+  mutations: {
+    setSkillCategories(state,payload) {
+      state.skillcategories = payload.skillCategories;
+    },
+  },
+  actions: {
+    async updateSkillCategories({commit}) {
+      const skillCategories = [];
+      const res = await Axios.get('https://us-central1-portfolio-e55ed.cloudfunctions.net/skills');
+      res.data.forEach((category) => {
+        skillCategories.push(category);
+      });
+      commit('setSkillCategories',{skillCategories});
+    },
+  },
+});
+console.log(store.state);
 
 export default store
+
+
+
