@@ -48,6 +48,7 @@ export default {
     margin: 0 auto;
     display: block;
     text-align: center;
+    cursor: pointer;
   }
 
   #footerCopyright {

@@ -4,7 +4,9 @@
       Skill Set
     </div>
     <div id="skillskill">
-      <div id="skillExplain" />
+      <div id="skillExplain">
+        このポートフォリオの作成にあたり、フロントエンドのスキルは少し力をつけることができました。これからより高度な技術の取得に努めてまいります。
+      </div>
       <label id="gitHubLabel">
         GitHub:
         <a
@@ -17,12 +19,12 @@
     <div id="skillCategories">
       <ul>
         <li>
-          <span
+          <div
             id="front"
             @click="setCurrentChart('front')"
           >
             Front-end
-          </span>
+          </div>
         </li>
         <li>
           <span
@@ -43,69 +45,69 @@
       </ul>
     </div>
     <div id="skillList">
-      <ul
+      <div
         id="front-end"
         :class="{'front-change': isFrontActive}"
       >
-        <li id="HTML">
+        <button id="HTML">
           HTML
-        </li>
-        <li id="css">
+        </button>
+        <button id="css">
           css
-        </li>
-        <li id="Javascript">
+        </button>
+        <button id="Javascript">
           Javascript
-        </li>
-        <li id="jQuery">
+        </button>
+        <button id="jQuery">
           jQuery
-        </li>
-        <li id="SCSS">
+        </button>
+        <button id="SCSS">
           SCSS
-        </li>
-        <li id="Vue">
+        </button>
+        <button id="Vue">
           Vue
-        </li>
-      </ul>
-      <ul
+        </button>
+      </div>
+      <div
         id="back-end"
         :class="{'back-change': isBackActive}"
       >
-        <li id="Java">
+        <button id="Java">
           Java
-        </li>
-        <li id="Ruby">
+        </button>
+        <button id="Ruby">
           Ruby
-        </li>
-        <li id="RubyOnRails">
+        </button>
+        <button id="RubyOnRails">
           RubyOnRails
-        </li>
-        <li id="MySQL">
+        </button>
+        <button id="MySQL">
           MySQL
-        </li>
-        <li id="Python">
+        </button>
+        <button id="Python">
           Python
-        </li>
-      </ul>
-      <ul
+        </button>
+      </div>
+      <div
         id="devops"
         :class="{'dev-change': isDevOpsActive}"
       >
-        <li id="Linux">
+        <button id="Linux">
           Linux
-        </li>
-        <li id="Git">
+        </button>
+        <button id="Git">
           Git
-        </li>
-        <li id="GitHub">
+        </button>
+        <button id="GitHub">
           GitHub
-        </li>
-        <li id="Firebase">
+        </button>
+        <button id="Firebase">
           Firebase
-        </li>
-        <li id="AWS">
+        </button>
+        <button id="AWS">
           AWS
-        </li>
-      </ul>
+        </button>
+      </div>
     </div><br>
     <div
       v-if="isFrontActive"
@@ -181,7 +183,6 @@ export default {
   font-family: 'Montserrat', sans-serif;
   font-size: 12pt;
   word-break: break-all;
-  width: 50%;
   margin: 0 auto;
   padding: 20px;
   text-align: center;
@@ -196,12 +197,19 @@ export default {
 }
 
 #skillExplain {
-  width: 50%;
+  background: #fff;
+  border-radius: 10px 10px 10px 10px;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12pt;
+  word-break: break-all;
+  margin: 0 auto;
   text-align: center;
 }
 
 #gitHubLabel {
   font-size: 16px;
+  cursor: pointer;
 }
 
 #front {
@@ -216,6 +224,7 @@ export default {
   padding: 10px;
   text-align: center;
   display: inlien-block;
+  cursor: pointer;
 }
 
 .front-end {
@@ -236,6 +245,7 @@ export default {
   padding: 10px;
   text-align: center;
   display: inlien-block;
+  cursor: pointer;
 }
 
 .back-end {
@@ -255,6 +265,7 @@ export default {
   padding: 10px;
   text-align: center;
   display: inlien-block;
+  cursor: pointer;
 }
 
 .devops {

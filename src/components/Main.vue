@@ -46,7 +46,7 @@ export default {
   color: #fafad2;
   font-family: 'Montserrat', sans-serif;
   font-weight: bolder;
-  font-size: 18pt;
+  font-size: 24pt;
   text-shadow: 2px 2px black;
   text-align: center;
 }
@@ -55,7 +55,7 @@ export default {
   color: #fafad2;
   font-family: 'Montserrat', sans-serif;
   font-weight: bolder;
-  font-size: 24pt;
+  font-size: 22pt;
   text-shadow: 2px 2px black;
   text-align: center;
 }
