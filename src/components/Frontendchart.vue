@@ -10,7 +10,8 @@ export default {
         datasets: [
           {
             label: 'Bar Dateset',
-            data: [3, 4, 2, 1, 5],
+            data: [
+            ],
             backgroundColor: [
               'rgba(102,51,51,0.6)',
             ],
@@ -33,7 +34,14 @@ export default {
     }
   },
   mounted () {
+    this.getSkills
     this.renderChart(this.data, this.options)
+  },
+  method: {
+  getSkill(){
+    const skills = this.$store.state.skills
+    this.data.labels =skills
+  }
   }
 }
 </script>

@@ -10,7 +10,7 @@ export default new Vuex.Store({ //storeをexport
   },
   //componentsの算出プロパティ//各componentsで共通のcomputedメソッドがあるとき、共通化の手段としてgettersオプションが提供
   getters: {
-    getSkill: (state) => (category) =>{
+    getSkills: (state) => (category) =>{
       if (state.skillCategories.length >0) {
         //skill.categoriesと同じ値のcategoryだった
         //skill.category・・・配列の中の1つの要素、カテゴリーを表す
