@@ -4,7 +4,10 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 app.use(bodyParser.json());
-admin.initializeApp();
+admin.initializeApp({
+  credential: admin.credential.applicationDefault(),
+  databaseURL: "https://portfolio-e55ed.firebaseio.com/"
+});
 app.get('/', (req, res) => {
   // Cross-Origin Resource Sharing（CORS）に対応させる
   res.set('Access-Control-Allow-Origin', '*');
@@ -30,13 +33,3 @@ app.get('/', (req, res) => {
 });
 // regionを指定してファンクションを定義(CORS対策)
 exports.skills = functions.region('us-central1').https.onRequest(app);
-
-
-var admin = require("firebase-admin");
-
-var serviceAccount = require("path/to/serviceAccountKey.json");
-
-var secondaryAppConfig = {
-  credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://portfolio-e55ed.firebaseio.com/"
-};

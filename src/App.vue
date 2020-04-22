@@ -17,10 +17,12 @@ import aboutSection from './components/About.vue';
 import skillSection from './components/Skill.vue';
 import visionSection from './components/Vision.vue';
 import footerSection from './components/Footer.vue';
+import {mapActions,mapGetters} from 'vuex';
+
 
 export default {
   name: 'App',
-  components: {
+    components: {
     headerSection,
     mainSection,
     aboutSection,
@@ -28,35 +30,34 @@ export default {
     visionSection,
     footerSection,
   },
-    data() {
-      return {
-        skills: []
-      }
+  data: function(){
+    return {
+      skills: [],
+      category: 'front-end',
+    };
+  },
+  computed: {
+    ...mapGetters({
+      get: 'getSkills',
+    }),
+  },
+
+  created () {
+    this.updateSkillCategories();
+  },
+
+  methods: {
+    ...mapActions(['updateSkillCategories']),
+
+    getSkill() {
+      this.get(this.category);
     },
-    mounted () {
-      this.getSkills();
+
+    async test() {
+      return await this.updateSkillCategories();
     },
-    methods: {
-    getSkills() {
-      // dataのスキルを初期化する
-      this.skills = [];
-      // this.skillsを一時変数のitemsに参照コピーする
-      let items = this.skills;
-      // axios.getを用いてデプロイ済のfunctionにアクセスする
-      this.axios.get('https://maikawaoka-87700.firebaseio.com/')
-        .then((response) => {
-          response.data.forEach(function(skill) {
-            // 取得したデータを１件ずつ配列に設定する
-            items.push(skill);
-          })
-        })
-        .catch((e) => {
-          alert(e);
-        });
-      console.log(items)
-    }
-  }
-}
+  },
+};
 </script>
 
 
