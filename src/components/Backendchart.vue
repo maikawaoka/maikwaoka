@@ -32,14 +32,16 @@ export default {
       }
     }
   },
-  mounted () {
-    this.getSkills
+    mounted () {
+    this.getSkills ()
     this.renderChart(this.data, this.options)
   },
-  method: {
-    getSkill(){
-      const skills = this.$store.state.skills
+  methods: {
+    getSkills () {
+      const skills = this.$store.getters.skillName(1)
       this.data.labels =skills
+      const scores = this.$store.getters.skillScore(1)
+      this.data.datasets[0].data =scores
     }
   }
 }

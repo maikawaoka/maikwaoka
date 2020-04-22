@@ -10,15 +10,24 @@ export default new Vuex.Store({ //storeをexport
   },
   //componentsの算出プロパティ//各componentsで共通のcomputedメソッドがあるとき、共通化の手段としてgettersオプションが提供
   getters: {
-    getSkills: (state) => (category) =>{
-      if (state.skillCategories.length >0) {
-        //skill.categoriesと同じ値のcategoryだった
-        //skill.category・・・配列の中の1つの要素、カテゴリーを表す
-        //=>アロー関数
-        return state.skillCategories.find((skill) =>skill.category==category);
+    skillName:(state) => (index) => {
+      const skillNameArray = []
+      if(state.skillCategories[index]) {
+        state.skillCategories[index].skill.forEach((Skill) => {
+          skillNameArray.push(Skill.name)
+        })
       }
-      return []
+      return skillNameArray
     },
+    skillScore:(state) => (index) => {
+      const skillScoreArray = []
+      if(state.skillCategories[index]) {
+        state.skillCategories[index].skill.forEach((Score) => {
+          skillScoreArray.push(Score.score)
+        })
+      }
+      return skillScoreArray
+    }
   },
   //同期処理、stateの更新
   mutations: {
@@ -26,22 +35,19 @@ export default new Vuex.Store({ //storeをexport
     setSkillCategories(state,payload) {
       //state.skillCategoriesをstateのskillCategoriesに代入
       //payloadは追加の引数
-    state.skillcategories = payload.skillCategories; //payloadは追加の引数
+    state.skillCategories = payload.skillCategories; //payloadは追加の引数
     state.loaded = true
     }
   },
   //非同期処理、mutationをcommit
   actions: {
+      //非同期
     async updateSkillCategories({commit}) {
-      //dataのスキルを初期化
-      const skillCategories = [];
-      //functionにawait axiosを用いてアクセス
-      const res = await Axios.get('https://us-central1-portfolio-e55ed.cloudfunctions.net/skills');
-      //取得したデータを入れるに設定
-      res.data.forEach((category) => {
-        skillCategories.push(category);
-      });
-      commit('setSkillCategories',{skillCategories});
+      return Axios.get('https://us-central1-portfolio-e55ed.cloudfunctions.net/skills')
+        .then (response => {
+          const skillCategories = response.data
+          commit('setSkillCategories',{skillCategories})
+        })
     },
   },
 })

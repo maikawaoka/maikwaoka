@@ -6,7 +6,7 @@ export default {
   data (){
     return {
       data: {
-        labels: ["HTML", "css", "Javascript", "SCSS", "Vue"],
+        labels: [],
         datasets: [
           {
             label: 'Bar Dateset',
@@ -34,13 +34,15 @@ export default {
     }
   },
   mounted () {
-    this.getSkills
+    this.getSkills ()
     this.renderChart(this.data, this.options)
   },
-  method: {
-  getSkill(){
-    const skills = this.$store.state.skills
-    this.data.labels =skills
+  methods: {
+    getSkills () {
+      const skills = this.$store.getters.skillName(0)
+      this.data.labels =skills
+      const scores = this.$store.getters.skillScore(0)
+      this.data.datasets[0].data =scores
   }
   }
 }

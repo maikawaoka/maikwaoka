@@ -33,13 +33,15 @@ export default {
     }
   },
   mounted () {
-    this.getSkills
+    this.getSkills ()
     this.renderChart(this.data, this.options)
   },
-  method: {
-    getSkill(){
-      const skills = this.$store.state.skills
+  methods: {
+    getSkills () {
+      const skills = this.$store.getters.skillName(2)
       this.data.labels =skills
+      const scores = this.$store.getters.skillScore(2)
+      this.data.datasets[0].data =scores
     }
   }
 }

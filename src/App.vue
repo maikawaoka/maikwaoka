@@ -2,7 +2,7 @@
   <div>
     <headerSection />
     <mainSection />
-    <div>{{ this.Skills }}</div>
+    <div>{{ this.skills }}</div>
     <aboutSection />
     <skillSection />
     <visionSection />
@@ -34,11 +34,10 @@ export default {
       category: 'front-end',
     };
   },
-
   created () {
     this.$store.dispatch('updateSkillCategories')
   }
-  }
+}
 </script>
 
 
