@@ -47,7 +47,7 @@
     <div id="skillList">
       <div
         id="front-end"
-        :class="{'front-change': isFrontActive}"
+        :class="{'front-change': isFrontActive && loaded}"
       >
         <button id="HTML">
           HTML
@@ -156,6 +156,9 @@ export default {
     isDevOpsActive() {
       return this.currentChart=='devOps';
     },
+    loaded()  {
+      return this.$store.state.loaded
+    }
   },
   methods: {
     setCurrentChart(chart) {
@@ -230,7 +233,6 @@ export default {
 .front-end {
   display: inlien-block;
   font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
 }
 
 #back {
