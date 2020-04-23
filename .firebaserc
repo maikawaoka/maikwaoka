@@ -16,6 +16,13 @@
           "devportfolio-cb2fd"
         ]
       }
+    },
+    "develop-portfolio-b0eb0": {
+      "hosting": {
+        "portfolio": [
+          "develop-portfolio-b0eb0"
+        ]
+      }
     }
   }
 }

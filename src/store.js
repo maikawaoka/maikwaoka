@@ -43,7 +43,7 @@ export default new Vuex.Store({ //storeをexport
   actions: {
       //非同期
     async updateSkillCategories({commit}) {
-      const functionsUrl = 'https://us-central-' + process.env.VUE_APP_FUNCTIONS_API + '.cloudfunctions.net/skillCategories';
+      const functionsUrl = 'https://us-central1-' + process.env.VUE_APP_FUNCTIONS_API + '.cloudfunctions.net/skills';
       return Axios.get(functionsUrl)
         .then (response => {
           const skillCategories = response.data
