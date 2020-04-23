@@ -34,8 +34,8 @@ export default {
     }
   },
   mounted () {
-    this.getSkills ()
-    this.renderChart(this.data, this.options)
+    this.getSkills () //getSkilK関数のmetohd内で処理する①！
+    this.renderChart(this.data, this.options) //②！①が先に実行されてて数値が出ないと描画できないから
   },
   methods: {
     getSkills () {

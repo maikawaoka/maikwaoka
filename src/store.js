@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import Axios from 'axios'
-Vue.use(Vuex)//vueが読み込まれている
+Vue.use(Vuex) //vuexが読み込まれている
 
 export default new Vuex.Store({ //storeをexport
   state: {
@@ -43,7 +43,8 @@ export default new Vuex.Store({ //storeをexport
   actions: {
       //非同期
     async updateSkillCategories({commit}) {
-      return Axios.get('https://us-central1-portfolio-e55ed.cloudfunctions.net/skills')
+      const functionsUrl = 'https://us-central1-' + process.env.VUE_APP_FUNCTIONS_API + '.cloudfunctions.net/skills';
+      return Axios.get(functionsUrl)
         .then (response => {
           const skillCategories = response.data
           commit('setSkillCategories',{skillCategories})
