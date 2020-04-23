@@ -48,22 +48,6 @@
               @click="toggle"
             >Vision</a>
           </li><br>
-          <li>
-            <a
-              v-smooth-scroll
-              href="#visionSection"
-              class="Menubar"
-              @click="toggle"
-            >Customize Item1</a>
-          </li><br>
-          <li>
-            <a
-              v-smooth-scroll
-              href="#visionSection"
-              class="Menubar"
-              @click="toggle"
-            >Customize Item2</a>
-          </li><br>
         </ul>
       </div>
     </Drawer>
@@ -107,6 +91,7 @@ $--simple-drawer-bg-color:white;
 #headerButton {
   background-color: #fff;
   border-style: none;
+  position: fixed;
 }
 
 #bottonimg {
@@ -122,8 +107,13 @@ $--simple-drawer-bg-color:white;
   height: auto;
 }
 
+.vue-simple-drawer {
+  background: #fff !important;
+}
+
 .Menubar {
   color: black;
-  font-size: 20px;
+  font-size: 24px;
+  line-height: 1.8em;
 }
 </style>

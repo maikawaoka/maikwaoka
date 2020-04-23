@@ -1,23 +1,12 @@
 <template>
   <div>
-    <div id="headerSection">
-      <headerSection />
-    </div>
-    <div id="mainSection">
-      <mainSection />
-    </div>
-    <div id="aboutSection">
-      <aboutSection />
-    </div>
-    <div id="skillSection">
-      <skillSection />
-    </div>
-    <div id="visionSection">
-      <visionSection />
-    </div>
-    <div id="footerSection">
-      <footerSection />
-    </div>
+    <headerSection />
+    <mainSection />
+    <div>{{ this.skills }}</div>
+    <aboutSection />
+    <skillSection />
+    <visionSection />
+    <footerSection />
   </div>
 </template>
 
@@ -31,13 +20,22 @@ import footerSection from './components/Footer.vue';
 
 export default {
   name: 'App',
-  components: {
+    components: {
     headerSection,
     mainSection,
     aboutSection,
     skillSection,
     visionSection,
     footerSection,
+  },
+  data: function(){
+    return {
+      skills: [],
+      category: 'front-end',
+    };
+  },
+  created () {
+    this.$store.dispatch('updateSkillCategories')
   }
 }
 </script>
@@ -49,5 +47,4 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 </style>
-
 
