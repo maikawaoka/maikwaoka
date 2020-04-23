@@ -23,7 +23,7 @@ PRODUCTION_SERVER="portfolio-43a14"
 function check_execute() {
   if [ $1 -gt 0 ]; then
     echo $2
-    exit $1
+    exit $1c
   fi
 }
 
