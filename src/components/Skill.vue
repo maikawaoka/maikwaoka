@@ -110,7 +110,7 @@
       </div>
     </div><br>
     <div
-      v-if="isFrontActive"
+      v-if="isFrontActive && loaded"
       class="graph"
     >
       <Frontendchart />

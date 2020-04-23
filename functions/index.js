@@ -4,10 +4,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 app.use(bodyParser.json());
-admin.initializeApp({
-  credential: admin.credential.applicationDefault(),
-  databaseURL: "https://portfolio-e55ed.firebaseio.com/"
-});
+admin.initializeApp();
 app.get('/', (req, res) => {
   // Cross-Origin Resource Sharing（CORS）に対応させる
   res.set('Access-Control-Allow-Origin', '*');
