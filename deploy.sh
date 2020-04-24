@@ -9,14 +9,14 @@
 # sh deploy.sh production
 # both:本番、開発両方
 # sh deploy.sh both
-# 上記コマンドのいずれかを実行する
+# 上記コマンドのいずれかを実行する、、これデプロイ！
 #
 # masterブランチ名が異なる人は変えてください(いないと思うが)
 MASTER_BRANCH='master'
 # TODO: 自分の開発用サービス名に変更する
-DEVELOPMENT_SERVER="seattle-academy-demo"
+DEVELOPMENT_SERVER="develop-portfolio-b0eb0"
 # TODO: 自分の本番公開用サービス名に変更する
-PRODUCTION_SERVER="portfolio-43a14"
+PRODUCTION_SERVER="portfolio-e55ed"
 
 # $1:execute status
 # $2:error message
@@ -44,7 +44,7 @@ if [ $1 = "production" ] || [ $1 = "both" ]; then
   # switch to production server
   git checkout .firebase/hosting.ZGlzdA.cache
   # TODO: masterにこの修正がマージされたら外して、masterのデプロイもこのシェルでできるようになります
-  # git checkout ${MASTER_BRANCH}
+  git checkout ${MASTER_BRANCH}
   # checkout check
   check_execute $? "checkout to master error"
   git pull
