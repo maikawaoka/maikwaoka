@@ -7,7 +7,7 @@
       <img
         id="footerScroll"
         alt="Footer"
-        src="../assets/pagetop.jpg"
+        src="../assets/yajirushi.png"
       >
     </a>
     <div id="footerCopyright">
@@ -43,9 +43,10 @@ export default {
   }
 
   #footerScroll {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     margin: 0 auto;
+    padding: 5px;
     display: block;
     text-align: center;
     cursor: pointer;
@@ -57,7 +58,7 @@ export default {
     font-weight: bold;
     font-size: 12pt;
     text-shadow: 0 0.5px 2px black;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
   }
 </style>

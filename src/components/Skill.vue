@@ -5,7 +5,11 @@
     </div>
     <div id="skillskill">
       <div id="skillExplain">
-        このポートフォリオの作成にあたり、フロントエンドのスキルは少し力をつけることができました。これからより高度な技術の取得に努めてまいります。
+        現在のスキルをまとめました。
+        プログラミングスキルはまだ乏しいですが、このポートフォリオの実装にあたりフロントエンドのスキルは力をつけることができたと実感しています。
+        今回、目に見えて変化がわかるフロントエンドの分野を非常に楽しく感じました。
+        これから幅広く、また高度な技術を得ることで、自分でできることが増えるのが楽しみです。
+        そのために日々がむしゃらに努めてまいります。
       </div>
       <label id="gitHubLabel">
         GitHub:
@@ -19,12 +23,12 @@
     <div id="skillCategories">
       <ul>
         <li>
-          <div
+          <span
             id="front"
             @click="setCurrentChart('front')"
           >
             Front-end
-          </div>
+          </span>
         </li>
         <li>
           <span
@@ -49,22 +53,22 @@
         id="front-end"
         :class="{'front-change': isFrontActive && loaded}"
       >
-        <button id="HTML">
+        <button class="HTML">
           HTML
         </button>
-        <button id="css">
+        <button class="css">
           css
         </button>
-        <button id="Javascript">
+        <button class="Javascript">
           Javascript
         </button>
-        <button id="jQuery">
+        <button class="jQuery">
           jQuery
         </button>
-        <button id="SCSS">
+        <button class="SCSS">
           SCSS
         </button>
-        <button id="Vue">
+        <button class="Vue">
           Vue
         </button>
       </div>
@@ -72,19 +76,19 @@
         id="back-end"
         :class="{'back-change': isBackActive}"
       >
-        <button id="Java">
+        <button class="Java">
           Java
         </button>
-        <button id="Ruby">
+        <button class="Ruby">
           Ruby
         </button>
-        <button id="RubyOnRails">
+        <button class="RubyOnRails">
           RubyOnRails
         </button>
-        <button id="MySQL">
+        <button class="MySQL">
           MySQL
         </button>
-        <button id="Python">
+        <button class="Python">
           Python
         </button>
       </div>
@@ -92,19 +96,19 @@
         id="devops"
         :class="{'dev-change': isDevOpsActive}"
       >
-        <button id="Linux">
+        <button class="Linux">
           Linux
         </button>
-        <button id="Git">
+        <button class="Git">
           Git
         </button>
-        <button id="GitHub">
+        <button class="GitHub">
           GitHub
         </button>
-        <button id="Firebase">
+        <button class="Firebase">
           Firebase
         </button>
-        <button id="AWS">
+        <button class="AWS">
           AWS
         </button>
       </div>
@@ -186,6 +190,7 @@ export default {
   font-family: 'Montserrat', sans-serif;
   font-size: 12pt;
   word-break: break-all;
+  width: 50%;
   margin: 0 auto;
   padding: 20px;
   text-align: center;
@@ -216,7 +221,7 @@ export default {
 }
 
 #front {
-  background: brown;
+  background: #a52a2a;
   border-radius: 10px 10px 10px 10px;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
@@ -235,8 +240,12 @@ export default {
   font-family: 'Montserrat', sans-serif;
 }
 
+.front-change button {
+  background: #a52a2a;
+}
+
 #back {
-  background: navy;
+  background: #4682b4;
   border-radius: 10px 10px 10px 10px;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
@@ -255,8 +264,12 @@ export default {
   font-family: 'Montserrat', sans-serif;
 }
 
+.back-change button {
+  background: #4682b4;
+}
+
 #DevOps {
-  background: purple;
+  background: #483d8b;
   border-radius: 10px 10px 10px 10px;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
@@ -275,6 +288,10 @@ export default {
   font-family: 'Montserrat', sans-serif;
 }
 
+.dev-change button {
+  background: #483d8b;
+}
+
 ul {
   list-style: none;
 }
@@ -291,132 +308,150 @@ li {
   height: auto;
   margin: 0 auto;
   font-family: 'Montserrat', sans-serif;
+  text-align: center;
 }
 
-#HTML {
-  background: rgba(102, 51, 51, 0.8);
+.HTML {
+  background: rgba(227, 227, 227, 0.2);
   border-radius: 10px 10px 10px 10px;
   color: #fff;
-  padding: 5px;
+  padding: 4px;
   margin: 5px;
+  border: none;  /* 枠線を消す */
 }
 
-#css {
-  background: rgba(102, 51, 51, 0.6);
+.css {
+  background: rgba(227, 227, 227, 0.2);
   border-radius: 10px 10px 10px 10px;
   color: #fff;
-  padding: 5px;
+  padding: 4px;
   margin: 5px;
+  border: none;  /* 枠線を消す */
 }
 
-#Javascript {
-  background: rgba(102, 51, 51, 0.6);
+.Javascript {
+  background: rgba(227, 227, 227, 0.2);
   border-radius: 10px 10px 10px 10px;
   color: #fff;
-  padding: 5px;
+  padding: 4px;
   margin: 5px;
+  border: none;  /* 枠線を消す */
 }
 
-#jQuery {
-  background: rgba(102, 51, 51, 0.6);
+.jQuery {
+  background: rgba(227, 227, 227, 0.2);
   border-radius: 10px 10px 10px 10px;
   color: #fff;
-  padding: 5px;
+  padding: 4px;
   margin: 5px;
+  border: none;  /* 枠線を消す */
 }
 
-#SCSS {
-  background: rgba(102, 51, 51, 0.6);
-  border-radius: 40px 40px 40px 40px;
-  color: #fff;
-  padding: 5px;
-  margin: 5px;
-}
-
-#Vue {
-  background: rgba(102, 51, 51, 0.6);
-  border-radius: 40px 40px 40px 40px;
-  color: #fff;
-  padding: 5px;
-  margin: 5px;
-}
-
-#Java {
-  background: rgba(0, 51, 151, 0.6);
+.SCSS {
+  background: rgba(227, 227, 227, 0.2);
   border-radius: 10px 10px 10px 10px;
   color: #fff;
-  padding: 5px;
+  padding: 4px;
   margin: 5px;
+  border: none;  /* 枠線を消す */
 }
 
-#Ruby {
-  background: rgba(0, 51, 151, 0.6);
+.Vue {
+  background: rgba(227, 227, 227, 0.2);
   border-radius: 10px 10px 10px 10px;
   color: #fff;
-  padding: 5px;
+  padding: 4px;
   margin: 5px;
+  border: none;  /* 枠線を消す */
 }
 
-#RubyOnRails {
-  background: rgba(0, 51, 151, 0.6);
+.Java {
+  background: rgba(227, 227, 227, 0.2);
   border-radius: 10px 10px 10px 10px;
   color: #fff;
-  padding: 5px;
+  padding: 4px;
   margin: 5px;
+  border: none;  /* 枠線を消す */
 }
 
-#MySQL {
-  background: rgba(0, 51, 151, 0.6);
+.Ruby {
+  background: rgba(227, 227, 227, 0.2);
   border-radius: 10px 10px 10px 10px;
   color: #fff;
-  padding: 5px;
+  padding: 4px;
   margin: 5px;
+  border: none;  /* 枠線を消す */
 }
 
-#Python {
-  background: rgba(0, 51, 151, 0.6);
+.RubyOnRails {
+  background: rgba(227, 227, 227, 0.2);
   border-radius: 10px 10px 10px 10px;
   color: #fff;
-  padding: 5px;
+  padding: 4px;
+  margin: 5px;
+  border: none;  /* 枠線を消す */
 }
 
-#Linux {
-  background: rgba(102, 51, 102, 0.6);
+.MySQL {
+  background: rgba(227, 227, 227, 0.2);
   border-radius: 10px 10px 10px 10px;
   color: #fff;
-  padding: 5px;
+  padding: 4px;
   margin: 5px;
+  border: none;  /* 枠線を消す */
 }
 
-#Git {
-  background: rgba(102, 51, 102, 0.6);
+.Python {
+  background: rgba(227, 227, 227, 0.2);
   border-radius: 10px 10px 10px 10px;
   color: #fff;
-  padding: 5px;
+  padding: 4px;
   margin: 5px;
+  border: none;  /* 枠線を消す */
 }
 
-#GitHub {
-  background: rgba(102, 51, 102, 0.6);
+.Linux {
+  background: rgba(227, 227, 227, 0.2);
   border-radius: 10px 10px 10px 10px;
   color: #fff;
-  padding: 5px;
+  padding: 4px;
   margin: 5px;
+  border: none;  /* 枠線を消す */
 }
 
-#Firebase {
-  background: rgba(102, 51, 102, 0.6);
+.Git {
+  background: rgba(227, 227, 227, 0.2);
   border-radius: 10px 10px 10px 10px;
   color: #fff;
-  padding: 5px;
+  padding: 4px;
   margin: 5px;
+  border: none;  /* 枠線を消す */
 }
 
-#AWS {
-  background: rgba(102, 51, 102, 0.6);
+.GitHub {
+  background: rgba(227, 227, 227, 0.2);
   border-radius: 10px 10px 10px 10px;
   color: #fff;
-  padding: 5px;
+  padding: 4px;
   margin: 5px;
+  border: none;  /* 枠線を消す */
+}
+
+.Firebase {
+  background: rgba(227, 227, 227, 0.2);
+  border-radius: 10px 10px 10px 10px;
+  color: #fff;
+  padding: 4px;
+  margin: 5px;
+  border: none;  /* 枠線を消す */
+}
+
+.AWS {
+  background: rgba(227, 227, 227, 0.2);
+  border-radius: 10px 10px 10px 10px;
+  color: #fff;
+  padding: 4px;
+  margin: 5px;
+  border: none;  /* 枠線を消す */
 }
 </style>
