@@ -12,6 +12,7 @@
     <Drawer
       align="left"
       :closeable="true"
+      @close="toggle"
     >
       <div v-if="open">
         <ul>

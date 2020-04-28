@@ -13,10 +13,10 @@ export default {
             data: [
             ],
             backgroundColor: [
-              'rgba(102,51,51,0.6)',
+              'rgba(165,42,42,0.65)',
             ],
             borderColor: [
-              'rgba(102,51,51,1)',
+              'rgba(165,42,42,1)',
             ],
             borderWidth: 1
           },

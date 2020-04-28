@@ -6,11 +6,11 @@
         {
           "id": 1,
           "name": "HTML",
-          "score": 3
+          "score": 4
         },
         {
           "name": "css",
-          "score": 3
+          "score": 5
         },
         {
           "name": "Javascript",
@@ -18,11 +18,11 @@
         },
         {
           "name": "JQuery",
-          "score": 3
+          "score": 2
         },
         {
           "name": "SCSS",
-          "score": 3
+          "score": 2
         },
         {
           "name": "Vue",
@@ -35,23 +35,23 @@
       "skill": [
         {
           "name": "Java",
-          "score": 3
+          "score": 2
         },
         {
           "name": "Ruby",
-          "score": 1
+          "score": 2
         },
         {
           "name": "RubyOnRails",
-          "score": 1
+          "score": 2
         },
         {
           "name": "MYSQL",
-          "score": 1
+          "score": 2
         },
         {
           "name": "Python",
-          "score": 1
+          "score": 2
         }
       ]
     },
@@ -60,23 +60,23 @@
       "skill": [
         {
           "name": "Linux",
-          "score": 3
+          "score": 4
         },
         {
           "name": "Git",
-          "score": 3
+          "score": 4
         },
         {
           "name": "GitHub",
-          "score":3
+          "score": 5
         },
         {
           "name": "Firebase",
-          "score": 3
+          "score": 4
         },
         {
           "name": "AWS",
-          "score": 1
+          "score": 2
         }
       ]
     }

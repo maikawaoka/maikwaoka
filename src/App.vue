@@ -2,7 +2,6 @@
   <div>
     <headerSection />
     <mainSection />
-    <div>{{ this.skills }}</div>
     <aboutSection />
     <skillSection />
     <visionSection />

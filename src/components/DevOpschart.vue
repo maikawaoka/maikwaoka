@@ -12,10 +12,10 @@ export default {
             label: 'Bar Dateset',
             data: [],
             backgroundColor: [
-              'rgba(102,51,102,0.6)',
+              'rgba(72,61,139,0.65)',
             ],
             borderColor: [
-              'rgba(102,51,102,1)',
+              'rgba(72,61,139,1)',
             ],
             borderWidth: 1
           },
