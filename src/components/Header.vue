@@ -18,34 +18,30 @@
         <ul>
           <li>
             <a
-              v-smooth-scroll
               href="#headerSection"
-              class="Menubar"
+              class="menu-bar"
               @click="toggle"
             >Home</a>
           </li><br>
           <li>
             <a
-              v-smooth-scroll
-              href="#AboutSection"
-              class="Menubar"
+              href="#aboutSection"
+              class="menu-bar"
               @click="toggle"
             >
               About Me</a>
           </li><br>
           <li>
             <a
-              v-smooth-scroll
               href="#skillSection"
-              class="Menubar"
+              class="menu-bar"
               @click="toggle"
             >Skill Set</a>
           </li><br>
           <li>
             <a
-              v-smooth-scroll
               href="#visionSection"
-              class="Menubar"
+              class="menu-bar"
               @click="toggle"
             >Vision</a>
           </li><br>
@@ -112,7 +108,7 @@ $--simple-drawer-bg-color:white;
   background: #fff !important;
 }
 
-.Menubar {
+.menu-bar {
   color: black;
   font-size: 24px;
   line-height: 1.8em;

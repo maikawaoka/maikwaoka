@@ -43,7 +43,7 @@ export default {
       this.data.labels =skills
       const scores = this.$store.getters.skillScore(0)
       this.data.datasets[0].data =scores
-  }
+    }
   }
 }
 </script>

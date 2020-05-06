@@ -20,7 +20,8 @@
   background: #333;
   width: 100%;
   height: auto;
-  padding: 30px;
+  padding-top: 30px;
+  padding-bottom: 60px;
   text-align: center;
 }
 
