@@ -274,6 +274,7 @@ li {
 }
 
 .front-list span {
+  font-family: 'Montserrat', sans-serif;
   background: rgba(227, 227, 227, 0.2);
   border-radius: 10px 10px 10px 10px;
   color: #fff;
@@ -288,6 +289,7 @@ li {
 }
 
 .back-list span {
+  font-family: 'Montserrat', sans-serif;
   background: rgba(227, 227, 227, 0.2);
   border-radius: 10px 10px 10px 10px;
   color: #fff;
@@ -302,6 +304,7 @@ li {
 }
 
 .dev-list span {
+  font-family: 'Montserrat', sans-serif;
   background: rgba(227, 227, 227, 0.2);
   border-radius: 10px 10px 10px 10px;
   color: #fff;

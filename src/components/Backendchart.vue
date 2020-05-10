@@ -6,7 +6,7 @@ export default {
   data (){
     return {
       data: {
-        labels: ["Java","Ruby","RubyOnRails","MySQL","Python"],
+        labels: [],
         datasets: [
           {
             label: 'Bar Dateset',
@@ -36,13 +36,13 @@ export default {
     this.getSkills ()
     this.renderChart(this.data, this.options)
   },
-  methods: {
-    getSkills () {
-      const skills = this.$store.getters.skillName(1)
-      this.data.labels =skills
-      const scores = this.$store.getters.skillScore(1)
-      this.data.datasets[0].data =scores
+    methods: {
+      getSkills () {
+        const skills = this.$store.getters.skillName(1)
+        this.data.labels =skills
+        const scores = this.$store.getters.skillScore(1)
+        this.data.datasets[0].data =scores
+      }
     }
-  }
 }
 </script>
