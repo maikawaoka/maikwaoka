@@ -53,64 +53,38 @@
         id="front-end"
         :class="{'front-change': isFrontActive && loaded}"
       >
-        <button class="HTML">
-          HTML
-        </button>
-        <button class="css">
-          css
-        </button>
-        <button class="Javascript">
-          Javascript
-        </button>
-        <button class="jQuery">
-          jQuery
-        </button>
-        <button class="SCSS">
-          SCSS
-        </button>
-        <button class="Vue">
-          Vue
-        </button>
+        <div class="front-list">
+          <span>HTML</span>
+          <span>css</span>
+          <span>Javascript</span>
+          <span>jQuery</span>
+          <span>SCSS</span>
+          <span>Vue</span>
+        </div>
       </div>
       <div
         id="back-end"
         :class="{'back-change': isBackActive}"
       >
-        <button class="Java">
-          Java
-        </button>
-        <button class="Ruby">
-          Ruby
-        </button>
-        <button class="RubyOnRails">
-          RubyOnRails
-        </button>
-        <button class="MySQL">
-          MySQL
-        </button>
-        <button class="Python">
-          Python
-        </button>
+        <div class="back-list">
+          <span>Java</span>
+          <span>Ruby</span>
+          <span>RubyOnRails</span>
+          <span>MySQL</span>
+          <span>Python</span>
+        </div>
       </div>
       <div
         id="devops"
         :class="{'dev-change': isDevOpsActive}"
       >
-        <button class="Linux">
-          Linux
-        </button>
-        <button class="Git">
-          Git
-        </button>
-        <button class="GitHub">
-          GitHub
-        </button>
-        <button class="Firebase">
-          Firebase
-        </button>
-        <button class="AWS">
-          AWS
-        </button>
+        <div class="dev-list">
+          <span>Linux</span>
+          <span>Git</span>
+          <span>GitHub</span>
+          <span>Firebase</span>
+          <span>AWS</span>
+        </div>
       </div>
     </div><br>
     <div
@@ -170,7 +144,6 @@ export default {
     }
   }
 }
-
 </script>
 
 <style>
@@ -240,10 +213,6 @@ export default {
   font-family: 'Montserrat', sans-serif;
 }
 
-.front-change button {
-  background: #a52a2a;
-}
-
 #back {
   background: #4682b4;
   border-radius: 10px 10px 10px 10px;
@@ -262,10 +231,6 @@ export default {
 .back-end {
   display: inlien-block;
   font-family: 'Montserrat', sans-serif;
-}
-
-.back-change button {
-  background: #4682b4;
 }
 
 #DevOps {
@@ -288,15 +253,13 @@ export default {
   font-family: 'Montserrat', sans-serif;
 }
 
-.dev-change button {
-  background: #483d8b;
-}
-
 ul {
   list-style: none;
+  padding: 0;/* user agent stylesheet抹消 */
 }
 
 li {
+  padding: 0;
   display: inline-block;
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
@@ -308,150 +271,50 @@ li {
   height: auto;
   margin: 0 auto;
   font-family: 'Montserrat', sans-serif;
-  text-align: center;
 }
 
-.HTML {
+.front-list span {
+  font-family: 'Montserrat', sans-serif;
   background: rgba(227, 227, 227, 0.2);
   border-radius: 10px 10px 10px 10px;
   color: #fff;
-  padding: 4px;
-  margin: 5px;
-  border: none;  /* 枠線を消す */
+  padding: 6px;
+  display: inline-block;
+  margin: 8px 4px;
+  border: none; /* 枠線を消す */
 }
 
-.css {
+.front-change span {
+  background: #a52a2a; /* 多分cssも上から順番に反応してくからlistのすぐ下にchange */
+}
+
+.back-list span {
+  font-family: 'Montserrat', sans-serif;
   background: rgba(227, 227, 227, 0.2);
   border-radius: 10px 10px 10px 10px;
   color: #fff;
-  padding: 4px;
-  margin: 5px;
-  border: none;  /* 枠線を消す */
+  padding: 6px;
+  display: inline-block;
+  margin: 8px 4px;
+  border: none;
 }
 
-.Javascript {
+.back-change span {
+  background: #4682b4;
+}
+
+.dev-list span {
+  font-family: 'Montserrat', sans-serif;
   background: rgba(227, 227, 227, 0.2);
   border-radius: 10px 10px 10px 10px;
   color: #fff;
-  padding: 4px;
-  margin: 5px;
-  border: none;  /* 枠線を消す */
+  padding: 6px;
+  display: inline-block;
+  margin: 8px 4px;
+  border: none;
 }
 
-.jQuery {
-  background: rgba(227, 227, 227, 0.2);
-  border-radius: 10px 10px 10px 10px;
-  color: #fff;
-  padding: 4px;
-  margin: 5px;
-  border: none;  /* 枠線を消す */
-}
-
-.SCSS {
-  background: rgba(227, 227, 227, 0.2);
-  border-radius: 10px 10px 10px 10px;
-  color: #fff;
-  padding: 4px;
-  margin: 5px;
-  border: none;  /* 枠線を消す */
-}
-
-.Vue {
-  background: rgba(227, 227, 227, 0.2);
-  border-radius: 10px 10px 10px 10px;
-  color: #fff;
-  padding: 4px;
-  margin: 5px;
-  border: none;  /* 枠線を消す */
-}
-
-.Java {
-  background: rgba(227, 227, 227, 0.2);
-  border-radius: 10px 10px 10px 10px;
-  color: #fff;
-  padding: 4px;
-  margin: 5px;
-  border: none;  /* 枠線を消す */
-}
-
-.Ruby {
-  background: rgba(227, 227, 227, 0.2);
-  border-radius: 10px 10px 10px 10px;
-  color: #fff;
-  padding: 4px;
-  margin: 5px;
-  border: none;  /* 枠線を消す */
-}
-
-.RubyOnRails {
-  background: rgba(227, 227, 227, 0.2);
-  border-radius: 10px 10px 10px 10px;
-  color: #fff;
-  padding: 4px;
-  margin: 5px;
-  border: none;  /* 枠線を消す */
-}
-
-.MySQL {
-  background: rgba(227, 227, 227, 0.2);
-  border-radius: 10px 10px 10px 10px;
-  color: #fff;
-  padding: 4px;
-  margin: 5px;
-  border: none;  /* 枠線を消す */
-}
-
-.Python {
-  background: rgba(227, 227, 227, 0.2);
-  border-radius: 10px 10px 10px 10px;
-  color: #fff;
-  padding: 4px;
-  margin: 5px;
-  border: none;  /* 枠線を消す */
-}
-
-.Linux {
-  background: rgba(227, 227, 227, 0.2);
-  border-radius: 10px 10px 10px 10px;
-  color: #fff;
-  padding: 4px;
-  margin: 5px;
-  border: none;  /* 枠線を消す */
-}
-
-.Git {
-  background: rgba(227, 227, 227, 0.2);
-  border-radius: 10px 10px 10px 10px;
-  color: #fff;
-  padding: 4px;
-  margin: 5px;
-  border: none;  /* 枠線を消す */
-}
-
-.GitHub {
-  background: rgba(227, 227, 227, 0.2);
-  border-radius: 10px 10px 10px 10px;
-  color: #fff;
-  padding: 4px;
-  margin: 5px;
-  border: none;  /* 枠線を消す */
-}
-
-.Firebase {
-  background: rgba(227, 227, 227, 0.2);
-  border-radius: 10px 10px 10px 10px;
-  color: #fff;
-  padding: 4px;
-  margin: 5px;
-  border: none;  /* 枠線を消す */
-}
-
-.AWS {
-  background: rgba(227, 227, 227, 0.2);
-  border-radius: 10px 10px 10px 10px;
-  color: #fff;
-  padding: 4px;
-  margin: 5px;
-  border: none;  /* 枠線を消す */
+.dev-change span {
+  background: #483d8b;
 }
 </style>

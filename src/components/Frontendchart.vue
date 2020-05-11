@@ -39,11 +39,11 @@ export default {
   },
   methods: {
     getSkills () {
-      const skills = this.$store.getters.skillName(0)
+      const skills = this.$store.getters.skillName(2)
       this.data.labels =skills
-      const scores = this.$store.getters.skillScore(0)
+      const scores = this.$store.getters.skillScore(2)
       this.data.datasets[0].data =scores
-  }
+    }
   }
 }
 </script>

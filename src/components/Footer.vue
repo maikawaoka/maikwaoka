@@ -7,7 +7,7 @@
       <img
         id="footerScroll"
         alt="Footer"
-        src="../assets/yajirushi.png"
+        src="../assets/yajirushi.svg"
       >
     </a>
     <div id="footerCopyright">
@@ -22,11 +22,11 @@ export default {
     clickSmoothScroll () {
       event.preventDefault()
       this.$SmoothScroll(
-        document.querySelector('#headerSection'),
-        400,
-        null,
-        null,
-        'y'
+        document.querySelector('#headerSection'), //このセクションまでスクロールしてください
+        400, //smoothscrollの決まり、秒
+        null, //
+        null, //
+        'y' //縦方向
       )
     }
   }
@@ -43,22 +43,24 @@ export default {
   }
 
   #footerScroll {
+    background: white;
     width: 50px;
     height: 50px;
     margin: 0 auto;
-    padding: 5px;
     display: block;
     text-align: center;
     cursor: pointer;
+    border-radius: 50%;
+    position: relative;
+    top: -25px;
   }
 
   #footerCopyright {
     color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    font-size: 12pt;
+    font-size: 16pt;
     text-shadow: 0 0.5px 2px black;
-    padding: 20px;
     text-align: center;
   }
 </style>

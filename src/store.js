@@ -3,7 +3,7 @@ import Vuex from 'vuex'
 import Axios from 'axios'
 Vue.use(Vuex) //vuexが読み込まれている
 
-export default new Vuex.Store({ //storeをexport
+export default new Vuex.Store({
   state: {    //state=componentsでいうdate。アプリケーションの状態(情報)
     skillCategories: [],
     loaded: false

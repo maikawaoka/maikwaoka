@@ -6,7 +6,7 @@ export default {
   data (){
     return {
       data: {
-        labels: ["Linux","Git","GitHub","Firebase","AWS"],
+        labels: [],
         datasets: [
           {
             label: 'Bar Dateset',
@@ -38,9 +38,9 @@ export default {
   },
   methods: {
     getSkills () {
-      const skills = this.$store.getters.skillName(2)
+      const skills = this.$store.getters.skillName(0)
       this.data.labels =skills
-      const scores = this.$store.getters.skillScore(2)
+      const scores = this.$store.getters.skillScore(0)
       this.data.datasets[0].data =scores
     }
   }
